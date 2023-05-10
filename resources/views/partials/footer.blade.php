@@ -6,25 +6,33 @@
                 <div class="side-links">
                     <ul>
                         <h2>DC COMICS</h2>
-                        <li><a href="#">link</a></li>
+                        @foreach($data["footerLinks"]["dc comics"] as $dcComicsLink)
+                        <li><a href="#">{{$dcComicsLink}}</a></li>
+                        @endforeach
                     </ul>
                     <ul>
                         <h2>SHOP</h2>
-                        <li><a href="#">link</a></li>
+                        @foreach($data["footerLinks"]["shop"] as $shopLink)
+                        <li><a href="#">{{$shopLink}}</a></li>
+                        @endforeach
                     </ul>
                 </div>
 
                 <div class="side-links">
                     <ul>
                         <h2>DC</h2>
-                        <li><a href="#">link</a></li>
+                        @foreach($data["footerLinks"]["dc"] as $dcLink)
+                        <li><a href="#">{{$dcLink}}</a></li>
+                        @endforeach
                     </ul>
                 </div>
 
                 <div class="side-links">
                     <ul>
                         <h2>SITES</h2>
-                        <li><a href="#">link</a></li>
+                        @foreach($data["footerLinks"]["sites"] as $sitesLink)
+                        <li><a href="#">{{$sitesLink}}</a></li>
+                        @endforeach
                     </ul>
                 </div>
             </div>
@@ -38,11 +46,13 @@
             <h2>FOLLOW US</h2>
 
             <ul>
-                <li v-for="social in socials">
+                @foreach($data["socialIcons"] as $socialIcon)
+                <li>
                     <a href="#">
-                    <img src="{{ Vite::asset('resources/img/footer-facebook.png') }}" alt="">
+                    <img src="{{ Vite::asset('resources/img/$socialIcon') }}" alt="">
                     </a>
                 </li>
+                @endforeach
             </ul>
         </div>
     </div>

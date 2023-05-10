@@ -5,10 +5,12 @@
         </div>
 
         <ul class="navbar">
+            @foreach($data["headerLinks"] as $headerLink)
             <li v-for="link in navLinks">
-                <a class="nav-link" href="link.href">link</a>
+                <a class="nav-link" href="link.href">{{$headerLink}}</a>
                 <div class="line"></div>
             </li>
+            @endforeach
         </ul>
     </div>
 </header>
