@@ -1,5 +1,47 @@
 <?php
 return [
+    "headerLinks" => [
+        "characters",
+        "comics",
+        "movies",
+        "tv",
+        "games",
+        "collectibles",
+        "videos",
+        "fans",
+        "news",
+        "shop"
+    ],
+    "iconsBanner" => [
+        [
+            "icon" => "buy-comics-digital-comics.png",
+            "title" => "digital comics"
+        ],
+        [
+            "icon" => "buy-comics-merchandise.png",
+            "title" => "dc merchandise"
+        ],
+        [
+            "icon" => "buy-comics-digital-comics.png",
+            "title" => "digital comics"
+        ],
+        [
+            "icon" => "buy-comics-shop-locator.png",
+            "title" => "comic shop locator"
+        ],
+        [
+            "icon" => "buy-dc-power-visa.svg",
+            "title" => "dc power visa"
+        ],
+    ],
+    "footerLinks" => [
+        "dc comics" => ["characters", "comics", "movies", "tv", "games", "videos", "news"],
+        "shop" => ["shop dc", "shop dc collectibles"],
+        "dc" => ["terms of use", "privacy policy (new)", "ad choices", "advertising", "jobs", "subscribtions", 
+                 "talent workshop", "cpsc ceetificates", "ratings", "shop help", "contact us"],
+        "sites" => ["dc", "mad magazine", "dc kids", "dc university", "dc power visa"]     
+    ],
+    "socialIcons" => ["footer-facebook.png", "footer-periscope.png", "footer-pinterest.png", "footer-twitter.png", "footer-youtube.png"],
     "cards" => [
         [
             "title" => "Action Comics #1000: The Deluxe Edition",
