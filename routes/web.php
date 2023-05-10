@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    $cards = config("db.cards");
+    return view('home', compact("cards"));
+})->name("home");
