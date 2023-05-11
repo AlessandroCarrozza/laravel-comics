@@ -22,12 +22,12 @@ return [
             "title" => "dc merchandise"
         ],
         [
-            "icon" => "buy-comics-digital-comics.png",
-            "title" => "digital comics"
-        ],
-        [
             "icon" => "buy-comics-shop-locator.png",
             "title" => "comic shop locator"
+        ],
+        [
+            "icon" => "buy-comics-subscriptions.png",
+            "title" => "subscriptions"
         ],
         [
             "icon" => "buy-dc-power-visa.svg",

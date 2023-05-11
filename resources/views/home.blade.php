@@ -25,7 +25,7 @@
         <ul class="container">
             @foreach($data["iconsBanner"] as $iconBanner)
             <li>
-                <img src="img/{{$iconBanner['icon']}}') }}" alt="">
+                <img src="{{ Vite::asset('resources/img/' . $iconBanner['icon']) }}" alt="">
                 <span>{{$iconBanner['title']}}</span>
             </li>
             @endforeach

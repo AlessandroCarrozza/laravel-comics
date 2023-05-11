@@ -49,7 +49,7 @@
                 @foreach($data["socialIcons"] as $socialIcon)
                 <li>
                     <a href="#">
-                    <img src="{{ Vite::asset('resources/img/$socialIcon') }}" alt="">
+                    <img src="{{ Vite::asset('resources/img/' . $socialIcon) }}" alt="">
                     </a>
                 </li>
                 @endforeach
